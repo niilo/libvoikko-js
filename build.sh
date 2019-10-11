@@ -14,6 +14,10 @@ case $1 in
      # Closure compiler may run out of memory when large dictionary files are embedded.
      OPTS="--closure 0 --embed-file 5"
      ;;
+   embed-node)
+     # Target to nodeJS
+     OPTS="--closure 0 -s ENVIRONMENT=\"node\" --embed-file 5"
+     ;;
    preload)
      OPTS="--closure 1 --preload-file 5"
      ;;
