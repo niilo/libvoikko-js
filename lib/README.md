@@ -5,10 +5,10 @@ Example (main.ts):
 ```typescript
 import Libvoikko from './libvoikko-morpho';
 
-let voikko = new Libvoikko();
-let v = voikko.init('fi');
+const voikko = new Libvoikko();
+const v = voikko.init('fi');
 
-let a = v.analyze('Nokialla');
+const a = v.analyze('Nokialla');
 console.log(a);
 ```
 
